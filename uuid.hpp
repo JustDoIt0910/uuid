@@ -78,7 +78,7 @@ private:
     uuid_t uuid_{};
 };
 
-std::ostream& operator<<(std::ostream& os, const UUID& uuid) {
+inline std::ostream& operator<<(std::ostream& os, const UUID& uuid) {
     os << uuid.to_string();
     return os;
 }
